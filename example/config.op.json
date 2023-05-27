@@ -10,7 +10,7 @@
   },
   "include_if": [
     {
-      "gitdir": "~/dev/gitlab/",
+      "gitdir": "~/dev/work/",
       "path": "~/.config/git-config-manager/.gitconfig-work",
       "content": {
         "user": {
@@ -19,7 +19,7 @@
       }
     },
     {
-      "gitdir": "~/dev/github/",
+      "gitdir": "~/dev/personal/",
       "path": "~/.config/git-config-manager/.gitconfig-personal",
       "content": {
         "user": {
