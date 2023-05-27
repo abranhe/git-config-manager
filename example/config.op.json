@@ -1,0 +1,31 @@
+{
+  "include": {
+    "path": "~/.config/git-config-manager/.gitconfig-main",
+    "content": {
+      "user": {
+        "name": "op://personal/me/git/name",
+        "signingkey": "op://personal/git/public key"
+      }
+    }
+  },
+  "include_if": [
+    {
+      "gitdir": "~/dev/gitlab/",
+      "path": "~/.config/git-config-manager/.gitconfig-work",
+      "content": {
+        "user": {
+          "email": "op://work/me/git/email"
+        }
+      }
+    },
+    {
+      "gitdir": "~/dev/github/",
+      "path": "~/.config/git-config-manager/.gitconfig-personal",
+      "content": {
+        "user": {
+          "email": "op://personal/me/git/email"
+        }
+      }
+    }
+  ]
+}

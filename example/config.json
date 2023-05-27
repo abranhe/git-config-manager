@@ -1,0 +1,31 @@
+{
+  "include": {
+    "path": "~/.config/git-config-manager/.gitconfig-main",
+    "content": {
+      "user": {
+        "name": "Abraham",
+        "signingkey": "ssh-ed25519 ABC123"
+      }
+    }
+  },
+  "include_if": [
+    {
+      "gitdir": "~/dev/gitlab/",
+      "path": "~/.config/git-config-manager/.gitconfig-work",
+      "content": {
+        "user": {
+          "email": "abraham@work.example.com"
+        }
+      }
+    },
+    {
+      "gitdir": "~/dev/github/",
+      "path": "~/.config/git-config-manager/.gitconfig-personal",
+      "content": {
+        "user": {
+          "email": "abraham@example.com"
+        }
+      }
+    }
+  ]
+}
