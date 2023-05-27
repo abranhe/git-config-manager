@@ -8,7 +8,7 @@ Work in progress
 
 This small tool allows you to have multiple git configurations. The main reason that I created this tool it wasn't to have multiple git configurations, but instead being able to store the configuration outside of the main `.gitconfig` file and being able to commit my global `.gitconfig` to my dotfiles repository.
 
-## Who does it work?
+## How does it work?
 
 This is where your configuration will be stored.
 
